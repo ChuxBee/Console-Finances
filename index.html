@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4 Challenge</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Console-Finances✨!</h1>
+    <script src="index.js"></script>  
+    <link rel ="stylesheet" href="./style.css">
+
+    <h2 style="text-align: center;">Profit & Loss For The Period 2010-2017</h2>
+
+<div>
+
+    <p id="demoA"></p>
+    <p id="demo01"></p>
+    <p id="demoB"></p>
+    <p id="demo02"></p>
+    <p id="demoC"></p>
+    <p id="demo03"></p>
+     
+</div>
+    
+<script>
+//Add all the Profits and Losses for the entire period
+
+let answer1 = "The Net Total P&L Over The Entire Period = ";
+document.getElementById("demoA").innerHTML =
+answer1;
+
+let result1 = 867884 + 984655 + 322013 + -69417 + 310503 + 522857 + 1033096 + 604885 + -216386 + 477532 + 893810 + -80353 +
+779806 + -335203 + 697845 + 793163 + 485070 + 584122 + 62729 + 668179 + 899906 + 834719 + 132003 + 309978 + 
+-755566 + 1170593 + 252788 + 1151518 + 817256 + 570757 + 506702 + -1022534 + 475062 + 779976 + 144175 + 542494 + 
+359333 + 321469 + 67780 + 471435 + 565603 + 872480 + 789480 + 999942 + -1196225 + 268997 + -687986 + 1150461 +
+682458 + 617856 + 824098 + 581943 + 132864 + 448062 + 689161 + 800701 + 1166643 + 947333 + 578668 + 988505 +
+1139715 + 1029471 + 687533 + -524626 + 158620 + 87795 + 423389 + 840723 + 568529 + 332067 + 989499 + 778237 +
+650000 + -1100387 + -174946 + 757143 + 445709 + 712961 + -1163797 + 569899 + 768450 + 102685 + 795914 + 60988 + 
+138230 + 671099;
+let demo1Result = document.getElementById("demo01");
+demo1Result.innerHTML = result1;
+
+//The Numbering of the months in JSindex is: 2 to 87; Effectively we have an actual Months count of 86
+let text = "Total Number of Months in The Data Set = 86";  
+document.getElementById("demoB").innerHTML = text;
+
+
+//Add all the changes in Profits and Losses for the entire period
+
+let answer3 = "Average Change = ";
+document.getElementById("demoC").innerHTML =
+answer3;
+     
+let result3 = 0 + 13.45 + -67.29 + -121.55 + -547.3 + 68.39 + 97.58 + -41.44 + -135.77 + -320.68 + 87.17 + -108.98
++ -1070.47 + -142.98 + -308.18 + 13.65 + -38.84 + 20.42 + -89.26 + 965.18 + 34.68 + -7.24 + -84.18 + 134.82
++ -343.74 + -254.92 + -78.4 + 355.52 + -29.02 + -30.16 + -11.22 + -301.8 + -146.45 + 64.18 + -81.51 + 276.27
++ -10.53 + -78.91 + 595.53 + 19.97 + 54.25 + -9.51 + 26.65 + -219.62 + -122.48 + -355.75 + -267.22 + -40.67
++ -9.46 + 33.38 + -29.38 + -77.16 + 237.23 + 53.8 + 16.18 + 45.7 + -18.79 + -38.91 + 70.82 + 15.29 
++ -9.67 + -33.21 + -176.3 + -130.23 + -44.65 + 382.24 + 98.56 + -32.37 + -41.59 + 197.98 + -21.35 + -16.47 
++ -269.29 + -84.1 + -532.78 + -41.13 + 59.96 + -263.23 + -148.96 + 34.83 + -86.63 + 675.1 + -92.33 + 126.65 
++ 385.49
+;
+
+let demo3Result = document.getElementById('demo03');
+demo3Result.innerHTML = result3;
+    
+</script>
+
+<p>Greatest Increase in Profits/Losses: Feb-2012 ($1,170,593)</p>
+
+<p>Greatest Decrease in Profits/Losses: Sep-2013 ($-1,196,225)</p>
+    
+</body>
+</html>
+
+
+
